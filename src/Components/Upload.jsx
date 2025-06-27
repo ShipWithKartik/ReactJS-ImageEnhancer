@@ -1,6 +1,16 @@
 import React from 'react'
 
-const Upload = () => {
+const Upload = (props) => {
+
+    const showImageHandler = (event)=>{
+
+        const file = event.target.files[0]
+        // FileList array (target.files)
+
+        if(file){
+            props.uploadImageHandler(file);
+        }
+    }
 
   return (
 
@@ -13,6 +23,7 @@ const Upload = () => {
         type='file'
         id='fileInput'
         className='hidden'
+        onChange={showImageHandler}
         />
 
         <span>

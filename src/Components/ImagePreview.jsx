@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ImagePreview = () => {
+const ImagePreview = (props) => {
 
   return (
 
@@ -15,7 +15,7 @@ const ImagePreview = () => {
                 Original Image
             </h2>
 
-            <img src="" alt="Image"/>
+            <img src={props.uploaded} alt="Image"/>
 
             <div>No Image Selected</div>
 
@@ -25,11 +25,13 @@ const ImagePreview = () => {
         <div className='bg-white shadow-lg rounded-xl overflow-hidden'>
 
             <h2 
-            className='text-xl font-semibold bg-gray-800 text-white'>
+            className='text-xl font-semibold bg-blue-800 text-white'>
                 Enhanced Image
             </h2>
 
             <img src="" alt="Image"/>
+
+            <div>No Enhanced Image</div>
 
         </div>
         
