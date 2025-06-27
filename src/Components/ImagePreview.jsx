@@ -1,4 +1,5 @@
 import React from 'react'
+import Loading from './Components/Loading'
 
 const ImagePreview = (props) => {
 
@@ -15,9 +16,11 @@ const ImagePreview = (props) => {
                 Original Image
             </h2>
 
-            <img src={props.uploaded} alt="Image"/>
-
-            <div>No Image Selected</div>
+            {props.uploaded ? (
+                <img src={props.uploaded} alt="Image"/>
+            ):(
+                <div>No Image Selected</div>
+            )}
 
         </div>
 
@@ -29,9 +32,15 @@ const ImagePreview = (props) => {
                 Enhanced Image
             </h2>
 
-            <img src="" alt="Image"/>
+            {props.enhanced && !props.loading && (
+                <img src={props.enhanced} alt="Image"/>
+            )}
 
-            <div>No Enhanced Image</div>
+            {props.loading ? (
+                <Loading />
+            ):(
+                <div>No Enhanced Image Available</div>
+            )}
 
         </div>
         
