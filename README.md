@@ -1,4 +1,8 @@
-# React + Vite
+# ReactJS-ImageEnhancer
+
+This is a React-based image enhancement project built using Vite for fast development and optimized performance. It includes useful ESLint configurations and supports Hot Module Replacement (HMR) during development.
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
