@@ -11,7 +11,7 @@ A web-based Image Enhancer built with ReactJS that allows users to upload images
 
 ## 🖼️ Demo
 
-[Live Demo](#) — *Coming Soon / Add your deployed URL here*
+[Live Demo](#) — *Coming Soon*
 
 ## 📷 Preview
 
