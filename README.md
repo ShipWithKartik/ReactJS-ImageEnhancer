@@ -1,16 +1,41 @@
-# ReactJS-ImageEnhancer
+# 🖼️ ReactJS Image Enhancer
 
-This is a React-based image enhancement project built using Vite for fast development and optimized performance. It includes useful ESLint configurations and supports Hot Module Replacement (HMR) during development.
+A web-based Image Enhancer built with ReactJS that allows users to upload images and apply enhancements like brightness, contrast, filters, and more in real-time. Perfect for quick edits, previews, and image transformations in the browser without needing external software.
 
-## React + Vite
+## 🚀 Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 📤 Upload and preview images instantly
+- 💾 Download the enhanced image
+- ♻️ Reset to original image anytime
+- ⚡ Fast and lightweight — no server required
 
-Currently, two official plugins are available:
+## 🖼️ Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live Demo](#) — *Coming Soon / Add your deployed URL here*
 
-## Expanding the ESLint configuration
+## 📷 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](./screenshot.png) <!-- Add a real screenshot if available -->
+
+## 🛠️ Tech Stack
+
+- **ReactJS** – Frontend framework
+- **HTML5 / CSS3** – Styling and layout
+- **JavaScript** – Image processing logic using canvas
+- **FileReader API & Canvas API** – Core for image enhancement and manipulation
+
+## 📂 Folder Structure
+
+```bash
+image-enhancer/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── ImageEditor.jsx
+│   ├── App.js
+│   ├── index.js
+│   └── styles/
+│       └── App.css
+├── package.json
+└── README.md
