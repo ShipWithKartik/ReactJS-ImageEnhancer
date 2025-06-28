@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Upload from './Components/Upload'
-import ImagePreview from './Components/ImagePreview'
-import { enhancedImageAPI } from './utils/enhanceImageApi'
+import Upload from './Upload' 
+import ImagePreview from './ImagePreview' 
+import { enhancedImageAPI } from '../utils/enhanceImageApi' 
 
 const Home = () => {
 
@@ -16,6 +16,7 @@ const Home = () => {
 
         // The browser stores this file temporarily in the RAM the url generated lets the browser access that in-memory file 
         setLoading(true);
+        setEnhancedImage(null); // Reset enhanced image when uploading new image
 
         try{
 
@@ -25,24 +26,22 @@ const Home = () => {
 
         }catch(error){
           console.log(error);
+          setLoading(false); // Set loading to false even if error occurs
           alert("There was some Error.Please try again Later")
         }
-
-        
-        
     }
     
   return (
 
-    <div>
+    <div className='w-full max-w-4xl'> 
 
         <Upload 
-        uploadImageHanlder={uploadImageHanlder}/>
+        uploadImageHandler={uploadImageHanlder}/>
 
         <ImagePreview 
         loading={loading} 
         uploaded={uploadedImage} 
-        enhanced={enhancedImage}/>
+        enhanced={enhancedImage?.image}/>
 
     </div>
 

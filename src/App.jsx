@@ -1,7 +1,5 @@
 import React from 'react'
 import Home from './Components/Home'
-import Upload from './Components/Upload'
-import ImagePreview from './Components/ImagePreview'
 
 const App = () => {
 
@@ -11,30 +9,25 @@ const App = () => {
 
         <div className='text-center mb-8'>
 
-            <h1>
+            <h1 className='text-3xl font-bold text-gray-800 mb-2'> 
                 AI Image Enhancer
             </h1>
-            <p>
+            <p className='text-gray-600'> 
                 Upload Your Image and let us enhance it in Seconds 
             </p>
 
         </div>
 
         <div 
-        className='text-lg text-gray-500'>
+        className='text-lg text-gray-500 mb-6'> 
             <p>Powered by AI</p>
         </div>
 
-
+        
         <Home />
-        <Upload />
-        <ImagePreview />
-
 
     </div>
-
   )
-
 }
 
-export default App
+export default App;
